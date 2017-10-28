@@ -1,7 +1,7 @@
 # banner-wakacje
 Animowany baner na potrzeby tutoriala ze strony http://domanart.pl/baner-animowany
 
-![alt text](https://github.com/kartofelek007/banner-wakacje/images/preview.png "Podglad projektu")
+![Podglad projektu](https://github.com/kartofelek007/banner-wakacje/images/preview.png)
 
 # uruchomienie projektu
 Po sciągnięciu projektu do siebie, odpalamy w konsoli
