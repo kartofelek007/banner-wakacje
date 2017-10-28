@@ -1,0 +1,24 @@
+.ground {
+    position: absolute;
+    bottom:0;
+    left:0;
+    width:200%;
+    height:330px;
+    z-index: 3;
+    animation: animGround 5s 0s infinite linear;
+}
+.ground div {
+    float:left;
+    width:50%;
+    height:330px;
+    background:
+        url(../images/drzewo1.png) 200px 20px no-repeat,
+        url(../images/drzewo2.png) 650px 10px no-repeat,
+        url(../images/drzewo1.png) 510px 20px no-repeat,
+        url(../images/drzewo3.png) 0 20px no-repeat,
+        url(../images/ziemia.png) 0 bottom repeat-x;
+}
+@keyframes animGround {
+    0% {transform:translate(-50%, 0);}
+    100% {transform:translate(0%, 0);}
+}

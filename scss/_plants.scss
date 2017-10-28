@@ -1,0 +1,15 @@
+.plants {
+    background: url(../images/roslinki.png) repeat-x;
+    position: absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:102px;
+    z-index: 10;
+    filter:blur(1px);
+    animation: animPlants 7s 0s infinite linear;
+}
+@keyframes animPlants {
+    0% {background-position: 0% 0;}
+    100% {background-position: 800px 0;}
+}

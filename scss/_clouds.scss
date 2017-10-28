@@ -1,0 +1,50 @@
+.clouds1 {
+    width:200%;
+    height:300px;
+    position: absolute;
+    left:0;
+    top:0;
+    z-index: 2;
+    opacity: 0.8;
+    animation: animClouds1 45s 0s infinite linear;
+}
+@keyframes animClouds1 {
+    0% {transform:translate(-50%, 0);}
+    100% {transform:translate(0%, 0);}
+}
+.clouds div {
+    float:left;
+    width:50%;
+    height:100%;
+    background:
+            url(../images/chmura3.png) 200px 30px no-repeat,
+            url(../images/chmura2.png) 0 10px no-repeat,
+            url(../images/chmura3.png) 500px 10px no-repeat
+            ;
+}
+
+.clouds2 {
+    width:200%;
+    height:300px;
+    position: absolute;
+    left:0;
+    top:0;
+    z-index: 2;
+    opacity: 0.4;
+    animation: animClouds2 75s 0s infinite linear;
+    filter:blur(2px);
+}
+@keyframes animClouds2 {
+    0% {transform:translate(-50%, 0);}
+    100% {transform:translate(0%, 0);}
+}
+.clouds2 div {
+    float:left;
+    width:50%;
+    height:100%;
+    background:
+            url(../images/chmura3.png) 400px 60px no-repeat,
+            url(../images/chmura2.png) 520px 10px no-repeat,
+            url(../images/chmura3.png) 100px 50px no-repeat
+            ;
+}

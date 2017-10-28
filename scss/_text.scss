@@ -1,0 +1,76 @@
+.text {
+    position: absolute;
+    left:0;
+    top:20px;
+    width: 100%;
+    z-index: 4;
+    font-family: 'Bangers', cursive;
+    font-size:60px;
+    line-height: 1;
+    transform:rotate(-5deg) skew(-10deg);
+    letter-spacing: 2px;
+    padding:20px;
+    text-shadow: 4px 4px 0px #fff;
+
+    span {
+        display: inline-block;
+        opacity: 0;
+        position: relative;
+        left:40px;
+    }
+
+    h2, h3 {
+        margin:0;
+        text-align: center;
+    }
+
+    h2 {
+        color:#E80F7A;
+    }
+
+    h3 {
+        color:#115EFC;
+    }
+
+
+    @for $i from 1 through 30 {
+        $time : (0.1 * $i) * 1s;
+        $timeLoop : (0.2 + 0.1 * $i) * 1s;
+        $whenOut : 8s;
+
+        span:nth-of-type(#{$i}) {
+            animation: animLetterIn 1s #{$time} 1 linear forwards,
+                        animLetterLoop 1s #{$timeLoop} infinite alternate,
+                        animLetterOut 1s #{$whenOut + $time} 1 linear forwards;
+        }
+    }
+}
+
+@keyframes animLetterIn {
+    0% {
+        opacity:0;
+        top:-30px;
+        left:100px;
+    }
+    100% {
+        opacity:1;
+        top:0;
+        left:0;
+    }
+}
+
+@keyframes animLetterLoop {
+    0% { transform: translateY(-4px); }
+    100% { transform: translateY(4px); }
+}
+
+@keyframes animLetterOut {
+    0% {
+        opacity:1;
+        left:0;
+    }
+    100% {
+        opacity:0;
+        left:-80px;
+    }
+}

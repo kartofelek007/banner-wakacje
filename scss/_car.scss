@@ -1,0 +1,50 @@
+.car {
+    width:348px;
+    height:197px;
+    position: absolute;
+    left:230px;
+    bottom:83px; 
+    z-index: 3;
+    animation: animCar 1s 0s infinite linear alternate;
+}
+@keyframes animCar {
+    0% {transform:rotate(2deg);}
+    100% {transform:rotate(-2deg);}
+}
+
+.car-body {
+    width:348px;
+    height:197px;
+    background: url(../images/samochod.png);
+    position: absolute;
+    left:0;
+    bottom:0;
+    animation: animCarBody 0.3s 0s infinite alternate linear;
+}
+@keyframes animCarBody {
+    0% {transform:translateY(0);}
+    100% {transform:translateY(4px);}
+}
+
+.car-wheel {
+    width:76px;
+    height:77px;
+    background: url(../images/kolo.png);
+    position: absolute;
+    left:65px;
+    bottom:-30px;
+    animation: animWheel 1s 0s infinite linear, 
+                animWheelUp 0.2s 0s infinite;
+}
+.car-wheel-right {
+    left:228px;
+}
+
+@keyframes animWheel {
+    0% {transform:rotate(0deg);}
+    100% {transform:rotate(-360deg);}
+}
+@keyframes animWheelUp {
+    0% {margin-top:0}
+    100% {margin-top:2px;}
+}

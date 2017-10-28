@@ -1,0 +1,14 @@
+.mountains-layer2 {
+    height:60px;
+    width:100%;
+    background: url(../images/gory-zielone.png) repeat-x;
+    position: absolute;
+    bottom:120px;
+    left:0;
+    z-index: 2;
+    animation: animMountains2 27s 0s infinite linear;
+}
+@keyframes animMountains2 {
+    0% {background-position: 0% 0;}
+    100% {background-position: -800px 0;}
+}
