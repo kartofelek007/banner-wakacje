@@ -3,11 +3,11 @@ Animowany baner na potrzeby tutoriala ze strony http://domanart.pl/baner-animowa
 
 ![Podglad projektu](https://raw.githubusercontent.com/kartofelek007/banner-wakacje/master/images/preview.jpg)
 
-# uruchomienie projektu
+# Uruchomienie projektu
 Po sciągnięciu projektu do siebie, odpalamy w konsoli
 
 ```
-npm i (i jak install)
+npm i (lub npm install, bo i === install)
 lub
 sudo npm i
 ```
