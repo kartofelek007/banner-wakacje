@@ -22,9 +22,9 @@ gulp
 # Wymagania
 Projekt wymaga zainstalowanych na komputerze:
 
-nodejs (https://nodejs.org/en/)
-gulp-cli (https://gulpjs.com/)
-gita :)
+- nodejs (https://nodejs.org/en/)
+- gulp-cli (https://gulpjs.com/)
+- gita :)
 
 # Podziękowania
-Dziękuję mojemu psu, że dzisiaj zachowywała się na podwórku całkiem spokojnie.
+Dziękuję mojemu psu, że dzisiaj zachowywał się na podwórku całkiem spokojnie...
